@@ -1,22 +1,21 @@
-
 language: php
 
 php:
-    7.0
-    7.1
+  7.0
+  7.1
 
 script:
-    - if [[ "$WITH_COVERAGE" == "true" ]]; then xdebug-enable; fi
+  - if [[ "$WITH_COVERAGE" == "true" ]]; then xdebug-enable; fi
 
 deploy:
-    provider: heroku
-    api_key:
-        secure: M76nYubHxdIukUf91Bg8i39hyBfC3ibFq86P+nQi+m7w8/7DyeYIwmB8KPXUoz6NyeAkYvHpuiHxJb7ro+5Sier2h7CCUfoOBxGkOhngQDVT5Un7WlW5pa0iijyZLo1DRP51uHjWhH5EC+5/E9nZvABT+cNRjU0VZSwheYZdOJCtacJDa9d6+3mQGma/4ZqlZ+sae4K7KcA2bZhJxm58skyPjcOavjGflW2879Q7rriq/Gqz7EBn5Q034l5pyS0tMxcYByBgef+O6JpI3O9qOmejU7/LKaWUnd/Cf+uz+r+NmCSkxaXJKdubsGIqp586U2ySnPRFx3jRjdvRrWdHGO5aZR0GvlOwMVryojyhvU43wYLv+NMAOl5h6A8yFh8qT0407+Wtn+F39vM4eerhkw5SZES6KwmYkEAn+eK4ujo5z831Hv0A8cXXSrL6SZKB56j1w4p7iJ0VllTBaAlZfzCr8gyIG+rQ17MV5ZlU8NKfWfJyH8nUX6WLhnKK4BR7ED+zPCuzg2KXWVl1bBhdOPYjjw3OeYZNTa1iu+Qn2M62a1Q5MxLkRJhE3S2j87JGg4Bq1ivgipkeja6RlBQeqXKylpMsGUHgAqHiCjE641smclyc+oCfm2u/d88l4MEdFNDa7ViZMG/Tatpk47xNP1zTVl7HDmMnUzBhx1KCvx8=
-    app: induseeb
+  provider: heroku
+  api_key:
+    secure: Mn6LabWVyYwjGKThxVl4SSJkSGy89yPRrkDqD6RUlvwonYsIrgj9wPRDk4pFxahd9FGUgstnqoeix8IKkiryPDsTUW3AwoP+yNBYDZHbhVSeu8Q4dvUBFmcV4m8+9FrzqyB+0dmNKfFJm3rHA1MpBslV5bAVVhHkXe4nJyOKwmSvat8Iup+Jw2UPfb9d+B33ddTJ3A+ck6+e5tVhWvTW+te4KOKKFhLPJohVokAweBYyvdjMeCsbZ7rPyWBYrTPiwJ3VbDGMpa55jgq35QZhXDEkBvlPeMkom9xSjeuzOOj1r9p1WjH52bOH7NRXJqRQanR/G88OqDOAo9O3tp9p4K4/wizskfaSYqbGgLfhAs18op5EluuAc1nMoUGCayqPj4yLf7hg+ILXqHkwmDT7cnhaHLg34TK1KHlCIpAHXYiG3+9qo8wfrqQVW/Xi05LRdIwehOv7yMP+O4zSexBS3EDGoC0PB9aZ8By6OyWH2M1JvmEJhryWDtlRF4FqJXxmy2RNh0rZLqlXP5+Ba7T43LGHeZluh4MHfO98Rf/6F4QoIH6UAmat+3SD7w90LHDSv/uE+YdDa3T+VowY7k0roltw3dD+E+DHKvba2IBYK8nt6IFaiCT5RXwI3sPYPXj+j0f0fS1uSgtxmkhksCE34wauSVY/yuYbED0/xwPPk/4=
+  app: industrialisation-lambot
 
 notifications:
-    email:
-        recipients:
-            - lambot.rom@gmail.com
-        on_success: never
-        on_failure: always
+  email:
+    recipients:
+      - lambot.rom@gmail.com
+    on_success: never
+    on_failure: always
